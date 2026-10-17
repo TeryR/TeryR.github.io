@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shyue — independent software</title>
+<meta name="description" content="Shyue builds small, private, deterministic tools — including tablefmt, the Excel-to-AI-readable-markdown converter. Nothing tracked, nothing uploaded.">
+<meta property="og:title" content="Shyue — independent software">
+<meta property="og:description" content="Small, private, deterministic tools. Nothing tracked, nothing uploaded.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='%232e7d5b'/><circle cx='16' cy='16' r='6' fill='%23f7f6f3'/></svg>">
+<style>
+  :root { --bg:#f7f6f3; --card:#fff; --ink:#1c2422; --mut:#66736d; --acc:#2e7d5b; --line:#e4e1da; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121615; --card:#1a211f; --ink:#e4e9e7; --mut:#8fa19a; --line:#283230; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+  header { padding: 40px 0 10px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .tag { color: var(--mut); margin: 0 0 30px; }
+  h2 { font-size: 18px; margin: 40px 0 12px; }
+  a { color: var(--acc); }
+  .tool { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 12px 0; }
+  .tool h3 { margin: 0 0 6px; font-size: 16px; }
+  .tool h3 a { text-decoration: none; }
+  .tool p { margin: 0; color: var(--mut); font-size: 14px; }
+  .legal { font-size: 14px; color: var(--mut); }
+  .legal h2 { font-size: 16px; }
+  .legal h3 { font-size: 14px; margin: 18px 0 6px; color: var(--ink); }
+  .legal p, .legal li { font-size: 14px; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--mut); }
+  footer a { color: var(--mut); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Shyue</h1>
+    <p class="tag">Independent software. Small, private, deterministic.</p>
+  </header>
+
+  <h2>Tools</h2>
+  <div class="tool">
+    <h3><a href="https://teryr.github.io/tablefmt/">tablefmt — Excel to AI-readable markdown</a></h3>
+    <p>Merged cells and multi-level headers turn into blank holes when pasted into ChatGPT or Claude. tablefmt reconstructs the real structure — hierarchy paths, empty-value semantics — into markdown your AI can read. Free, runs in your browser, nothing uploaded.</p>
+  </div>
+
+  <h2 id="legal">Terms of Service</h2>
+  <div class="legal">
+    <p><strong>tablefmt</strong> and any other software on this site are provided free of charge, "as is", without warranty of any kind. You use them at your own risk and are responsible for the files you process.</p>
+    <p>Voluntary support payments are exactly that — voluntary. They do not purchase a license, feature, or service beyond what the free tool already provides, and are non-refundable by default (contact <a href="mailto:shyue97@163.com">shyue97@163.com</a> if you paid by mistake — mistakes get refunded in full).</p>
+    <p>The maintainer may modify or discontinue any tool at any time.</p>
+  </div>
+
+  <h2>Privacy Notice</h2>
+  <div class="legal">
+    <p><strong>We collect nothing.</strong></p>
+    <p>All tools on this site process your files locally in your own browser. No file, file content, or derived data is uploaded to any server — including ours. No analytics, no tracking, no advertising cookies. The only thing ever stored is your light/dark theme preference, in your own browser's local storage.</p>
+    <p>If you email us, we obviously receive your email and use it only to reply.</p>
+    <p>This site is hosted on GitHub Pages; GitHub's infrastructure terms apply to the hosting itself.</p>
+  </div>
+
+  <h2>Refund Policy</h2>
+  <div class="legal">
+    <p>The tools are free — there is nothing to refund for using them.</p>
+    <p>Voluntary support payments are made willingly and are non-refundable by default. If you paid by mistake, email <a href="mailto:shyue97@163.com">shyue97@163.com</a> within 14 days and it will be refunded in full, no questions asked.</p>
+  </div>
+
+  <footer>
+    <div>© <span id="y"></span> Shyue · <a href="mailto:shyue97@163.com">shyue97@163.com</a> · <a href="https://github.com/TeryR">GitHub</a></div>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
